@@ -1,3 +1,81 @@
+## 📘 **Kieliversiot**
+
+ - Tämä README on kaksikielinen:
+ - Ohjeet ja selitykset ovat **ensin suomeksi**
+ - Sen jälkeen sama sisältö on **englanniksi**
+
+---
+
+# Varastonhallintajärjestelmä (Demo)
+
+Tämä on portfolioon tehty varastonhallinnan demojärjestelmä.
+
+Sovellus esittelee:
+- Käyttäjien kirjautumisen
+- Roolipohjaiset käyttöoikeudet (Admin / Demo)
+- Varaston perustoiminnot (lisäys, katselu, poisto)
+- Turvallisen julkisen demon toteutuksen
+
+---
+
+## 🚀 Ominaisuudet
+
+- Kirjautumisjärjestelmä kahdella roolilla:
+  - **Admin** – täydet oikeudet
+  - **Demo** – rajoitetut oikeudet
+- Tuotelista ja varastomäärät
+- Tuotteiden lisääminen (Admin & Demo)
+- Tuotteiden poistaminen (vain Admin)
+- Session-pohjainen demo (data nollautuu uloskirjautuessa)
+
+---
+
+## 🔐 Demo-käyttäjät
+
+| Rooli | Käyttäjätunnus | Salasana |
+|------|---------------|----------|
+| Admin | admin | admin123 |
+| Demo | demo | demo123 |
+
+⚠️ Huomio:  
+Tämä on **julkinen demo**.  
+Tuotetiedot tallennetaan sessioon ja ne nollautuvat uloskirjautuessa, jotta dataa ei voi rikkoa pysyvästi.
+
+---
+
+## 🛠️ Käytetyt teknologiat
+
+- PHP
+- HTML
+- CSS
+- JavaScript
+- MySQL (suunnitteilla)
+- XAMPP (Apache)
+
+---
+
+## 📁 Projektin rakenne
+
+/public
+├── index.php
+├── login.php
+├── logout.php
+├── products.php
+└── css/style.css
+
+---
+
+## 📌 Miksi session-pohjainen ratkaisu?
+
+Sessioneita käytetään, jotta:
+- julkinen demo pysyy turvallisena
+- käyttäjät eivät voi sotkea pysyvää dataa
+- liiketoimintalogiikka on helposti nähtävissä
+
+Tietokantapohjainen versio on helppo lisätä jatkokehityksenä.
+
+---
+
 # Inventory Management System (Demo)
 
 This is a demo inventory management system built as a portfolio project.
